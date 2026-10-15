@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas · asistente personal</title>
+<meta name="description" content="Atlas es un asistente personal de uso privado. Página principal y política de privacidad.">
+<style>
+  :root {
+    --fondo: #f7f5f0;
+    --texto: #1f2328;
+    --suave: #57606a;
+    --linea: #d8d4cc;
+    --acento: #2f5d8a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #15171a;
+      --texto: #e6e6e3;
+      --suave: #a3a8ae;
+      --linea: #33373d;
+      --acento: #8fb8e0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  .lema { color: var(--suave); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .75rem; padding-top: 1.5rem; border-top: 1px solid var(--linea); }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+  p, li { margin: .4rem 0; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--acento); }
+  .fecha { color: var(--suave); font-size: .95rem; }
+  footer { margin-top: 3rem; color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Atlas</h1>
+  <p class="lema">Un asistente personal de uso privado.</p>
+
+  <p>Atlas es un asistente que funciona en el ordenador de su propietario y le ayuda a consultar sus
+  documentos y su correo de Gmail. Lo usa una sola persona, su propietario, en su propio equipo. No
+  es un servicio público ni se ofrece a nadie más.</p>
+
+  <h2 id="privacidad">Política de privacidad</h2>
+  <p class="fecha">Última actualización: 15 de octubre de 2026.</p>
+
+  <h3>Qué datos usa</h3>
+  <p>Con el permiso de Gmail que su propietario concede en su propia cuenta de Google, Atlas puede
+  listar, buscar y leer los correos de esa cuenta para responder a lo que él le pregunta.</p>
+  <p>Hoy Atlas solo lee el correo. Si en el futuro envía, responde, reenvía o manda correos a la
+  papelera, lo hará solo después de que el propietario lo confirme expresamente en cada caso. Atlas
+  no borra correos para siempre ni cambia los ajustes de la cuenta.</p>
+
+  <h3>Dónde se procesan</h3>
+  <ul>
+    <li>En el ordenador del propietario. Atlas no tiene servidores propios.</li>
+    <li>La llave de acceso a Gmail se guarda cifrada en ese equipo. Solo se envía a Google, para
+    renovar el acceso; a nadie más.</li>
+    <li>Atlas guarda en el equipo un registro de cada conversación, sin el texto de los correos.</li>
+  </ul>
+
+  <h3>Con quién se comparte</h3>
+  <ul>
+    <li>Lo que Atlas lista o lee de un correo se envía a un modelo de lenguaje (Claude, de Anthropic)
+    solo para responder a la pregunta del propietario. Lo que haga Anthropic con esos datos se rige por
+    sus propias condiciones.</li>
+    <li>Atlas no vende estos datos, no los usa para publicidad, no los usa para entrenar modelos y no
+    los comparte con nadie más.</li>
+  </ul>
+
+  <h3>Cómo retirar el acceso</h3>
+  <p>El propietario puede retirar el permiso cuando quiera desde
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, o con la
+  orden de revocación de Atlas, que además borra la llave de su equipo.</p>
+
+  <h3>Contacto</h3>
+  <p>A través de la cuenta de GitHub del propietario:
+  <a href="https://github.com/Pvicen">github.com/Pvicen</a>.</p>
+
+  <footer>Atlas · uso personal y privado.</footer>
+</main>
+</body>
+</html>
